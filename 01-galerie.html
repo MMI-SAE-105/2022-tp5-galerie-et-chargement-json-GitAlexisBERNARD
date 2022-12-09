@@ -8,9 +8,10 @@
     <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
     <script src="//unpkg.com/alpinejs" defer></script>
 </head>
-<body x-data="{ChienImage:'https://picsum.photos/id/237/400/300',}">
+<body x-data="{ChienImage:null,}">
     <h1>Galerie</h1>
 <p>lorem⇥</p>
+<img src="https://picsum.photos/id/237/400/300" alt ="miniature chiot" @click="ChienImage = 'https://picsum.photos/id/237/400/300'">
 <div class="overlay" x-show="ChienImage" @click="ChienImage = null">
     <figure>
         <img :src="ChienImage" alt="image 237... un chiot">
